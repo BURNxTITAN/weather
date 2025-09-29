@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="bx bxs-map"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button class="bx bx-search"></button>
+      </div>
+
+      <!-- This is the 'Not Found' block that was missing -->
+      <div class="not-found" style="display: none; text-align: center">
+        <img src="images/404.png" style="width: 70%" />
+        <p style="font-size: 22px; font-weight: 500; margin-top: 12px">
+          Oops! Invalid location :/
+        </p>
+      </div>
+
+      <div class="weather-box">
+        <img src="images/cloud.png" />
+        <!-- src will be set by JavaScript -->
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="bx bx-water"></i>
+          <div class="text">
+            <span></span>
+            <!-- This span will hold the humidity value -->
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="bx bx-wind"></i>
+          <div class="text">
+            <span></span>
+            <!-- This span will hold the wind speed value -->
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+     
+  </body>
+</html>
